@@ -2,16 +2,13 @@ package MailDemo;
 
 public class MailProcessService {
 
-   String localMailIdsend = "uday@gamil.com";
 
-    String passwordSend = "1234";
-
-   String localMailIdFRead = "kiran@gmail.com";
-    String passwordRead = "4567";
     public boolean LoginStatus(MailDetails mailDetails){
-        if(localMailIdsend.equals(mailDetails.mailId)){
+        if(mailDetails.localMailIdsend.equals(mailDetails.mailId)){
+            System.out.println("your mail is login");
             return true;
         }else {
+            System.out.println("your mail is login faild");
             return false;
         }
 

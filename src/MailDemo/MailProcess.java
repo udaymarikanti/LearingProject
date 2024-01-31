@@ -8,12 +8,11 @@ public class MailProcess {
         String LocalPassword = "1234";
         MailProcessService service = new MailProcessService();
         if (service.LoginStatus(mailDetails)){
+            if(localMailid.equals(mailDetails.mailId)){
+                return "my message ";
 
-         if(localMailid.equals(mailDetails.mailId)){
-            return "my message ";
-
-        }else {
-            return "hello how are you ";
+           }else {
+                return "hello how are you ";
         }
     }
         return "wrong details";
