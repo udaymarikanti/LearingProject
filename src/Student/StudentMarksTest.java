@@ -12,6 +12,9 @@ public class StudentMarksTest {
         System.out.println(message);
         System.out.println(studentDeatils.studentMarks);
 
+        int num = marksService.squre();
+        System.out.println(num + " by adding ") ;
+
 
     }
 

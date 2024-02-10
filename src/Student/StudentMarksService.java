@@ -19,4 +19,28 @@ public class StudentMarksService {
             return "studentFaild";
         }
     }
+
+    int c = 0;
+    int a = 2;
+    int b = 3;
+
+    int d = 0;
+    public int squre(){
+
+        c = (a+b)*(a+b);
+        d = a*a +b* b +2 *(a *b);
+        System.out.println(d+ "   using formula");
+
+        return c;
+
+
+
+
+    }
+
+
+
+
+
+
 }
