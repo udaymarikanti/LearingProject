@@ -1,6 +1,6 @@
 package Rapido;
 
-public class BookingDetails {
+public class BookingDetails extends  CarDeatails {
     private  String name;
 
     private   String auto;
@@ -15,6 +15,7 @@ public class BookingDetails {
 
 
     public BookingDetails(String auto, String bike, int noOfPersons,String name,CarDeatails carDeatails) {
+        super(carDeatails.getCartype(), carDeatails.getCarPrice());
         this.auto = auto;
         this.bike = bike;
         this.carDeatails = carDeatails;
