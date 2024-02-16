@@ -11,9 +11,9 @@ public class CarDeatails {
     }
 
 
-    public CarDeatails(String cartype, String carPrice) {
+    public CarDeatails(String cartype, String ridePrice) {
         this.cartype = cartype;
-        this.ridePrice = carPrice;
+        this.ridePrice = ridePrice;
     }
 
     public String getCarPrice()
