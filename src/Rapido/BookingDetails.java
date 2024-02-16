@@ -9,9 +9,7 @@ public class BookingDetails extends  CarDeatails {
     private   int noOfPersons;
     private   CarDeatails carDeatails;
 
-    public String getName() {
-        return name;
-    }
+
 
 
     public BookingDetails(String auto, String bike, int noOfPersons,String name,CarDeatails carDeatails) {
@@ -40,6 +38,9 @@ public class BookingDetails extends  CarDeatails {
 
     public int getNoOfPersons() {
         return noOfPersons;
+    }
+    public String getName() {
+        return name;
     }
 
     @Override
