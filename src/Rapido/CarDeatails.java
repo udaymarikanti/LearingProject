@@ -1,28 +1,20 @@
 package Rapido;
 
-import RapidoRegistation.RapidoRegistationDetails;
-
-public class CarDeatails extends RapidoRegistationDetails {
+public class CarDeatails {
     private   String cartype;
     private   String ridePrice;
 
 
-//    public CarDeatails(){
-//
-//        cartype = "BMW";
-//        ridePrice = "20000";
-//    }
-
-
-    public CarDeatails(String name,String password,String mobileNo,String VechileType) {
-        super(name,password,mobileNo,VechileType);
-
+    public CarDeatails(){
+        cartype = "BMW";
+        ridePrice = "20000";
     }
-//    public CarDeatails(String cartype, String ridePrice){
-//        super();
-//        this.cartype = cartype;
-//        this.ridePrice = ridePrice;
-//    }
+
+
+    public CarDeatails(String cartype, String ridePrice) {
+        this.cartype = cartype;
+        this.ridePrice = ridePrice;
+    }
 
     public String getCarPrice()
     {
