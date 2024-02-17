@@ -1,4 +1,4 @@
 package demoPackage;
 
-public class d {
+public class b {
 }
