@@ -1,34 +1,35 @@
 package Rapido;
 
 public class CarDeatails {
-    private   String type;
-    private   String raidPrice;
+    private   String cartype;
+    private   String ridePrice;
 
 
     public CarDeatails(){
-        type = "BMW";
-        raidPrice = "20000";
+        cartype = "BMW";
+        ridePrice = "20000";
     }
 
 
-    public CarDeatails(String type, String carPrice) {
-        this.type = type;
-        this.raidPrice = carPrice;
+    public CarDeatails(String cartype, String ridePrice) {
+        this.cartype = cartype;
+        this.ridePrice = ridePrice;
     }
 
-    public String getType() {
-        return type;
+    public String getCarPrice()
+    {
+        return ridePrice;
     }
 
-    public String getCarPrice() {
-        return raidPrice;
+    public String getCartype() {
+        return cartype;
     }
 
     @Override
     public String toString() {
         return "CarDeatails{" +
-                "type='" + type + '\'' +
-                ", carPrice='" + raidPrice + '\'' +
+                "cartype='" + cartype + '\'' +
+                ", ridePrice='" + ridePrice + '\'' +
                 '}';
     }
 }

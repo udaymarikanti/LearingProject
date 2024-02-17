@@ -1,28 +1,30 @@
 package Rapido;
 
-public class BookingDetails {
+public class BookingDetails extends  CarDeatails {
     private  String name;
-
     private   String auto;
     private   String bike;
-
     private   int noOfPersons;
     private   CarDeatails carDeatails;
+    private   String userName;
 
-    public String getName() {
-        return name;
+
+
+    public String getUserName() {
+        return userName;
     }
 
-
-    public BookingDetails(String auto, String bike, int noOfPersons,String name,CarDeatails carDeatails) {
+    public BookingDetails(String auto, String bike, int noOfPersons,  String userName,String name,CarDeatails carDeatails) {
+        super(carDeatails.getCartype(), carDeatails.getCarPrice());
         this.auto = auto;
         this.bike = bike;
         this.carDeatails = carDeatails;
         this.noOfPersons = noOfPersons;
+        this.userName= userName;
         this.name = name;
     }
-    public BookingDetails(String auto, String bike, int noOfPersons,String name) {
-        this(auto,bike,noOfPersons,name,new CarDeatails());
+    public BookingDetails(String auto, String bike, int noOfPersons,String name,String userName) {
+        this(auto,bike,noOfPersons,name,userName,new CarDeatails());
     }
 
     public String getAuto() {
@@ -39,6 +41,9 @@ public class BookingDetails {
 
     public int getNoOfPersons() {
         return noOfPersons;
+    }
+    public String getName() {
+        return name;
     }
 
     @Override
